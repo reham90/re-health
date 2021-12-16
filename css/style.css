@@ -70,9 +70,11 @@
      margin-right: 6px;
      transition: 0.5s;
 }
+
  .social-icon:hover{
      color: #005a20;
 }
+
  .search-section{
      padding: 26px 0 33px;
      border-bottom: 1px solid rgb(219, 219, 219);
@@ -158,7 +160,7 @@
      position: absolute;
      top:-27px;
 }
- .nav-toggle span{
+ .menu-button{
      display: none;
 }
  @media only screen and (max-width: 798px) {
@@ -247,7 +249,7 @@
      position: fixed;
      width: 100%;
      height: 0;
-     background: #005a20;
+     background: #fff;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -265,7 +267,7 @@
      justify-content: center;
      align-items: center;
      display: flex;
-     background: #005a20;
+     background: #fff;
 }
  .menu-screen.active .search-box, .menu-screen.active .close-button{
      transition: .2s linear 0.4s;
@@ -283,7 +285,7 @@
 }
  .standard-btn{
      background: transparent !important;
-     color: #fff !important;
+     color: #005a20 !important;
      border: none;
      line-height: 1;
 }
@@ -775,7 +777,7 @@
          cursor: pointer;
          left:15px;
     }
-     .nav-toggle span{
+     .menu-button{
          cursor: pointer;
          font-size: 17px;
          color: #005a20;
@@ -786,7 +788,7 @@
          width: 20px;
          height: 20px;
     }
-     .nav-toggle.active span {
+     .nav-toggle.active .menu-button {
          background-color: transparent;
     }
      .search-box{
@@ -812,28 +814,32 @@
      .menu-list{
          list-style: none;
          padding: 0;
-         margin: 0;
+         margin: -100px 0 0;
     }
      .mobile-menu-link{
-         color: #fff;
+         color: #005a20;
          text-transform: capitalize;
          margin-bottom: 5px;
          display: block;
+         text-align: center;
     }
      .menu-screen .social-icons{
          display: flex;
          position: absolute;
-         bottom: 25%;
+         bottom: 35%;
          left: 50%;
          transform: translateX(-50%);
     }
      .menu-screen .social-icon{
          font-size: 22px;
          margin-right: 20px;
+         color: #005a20;
     }
+    
      .booking-btn{
          display: none;
     }
+    
      .nav-bar{
          display: none;
     }
@@ -841,7 +847,7 @@
          display: none;
     }
      .content{
-         padding: 15px 0;
+         padding: 40px 0;
     }
      .tab-icon-div{
          display: block;
@@ -871,7 +877,7 @@
          line-height: 26px;
     }
      .news{
-         padding: 15px 0;
+         padding: 0 0 40px;
     }
      .news-title{
          font-size: 23px;
@@ -911,15 +917,16 @@
     }
      .newsletter-paragraph{
          width: 100%;
+         margin-top: 30px;
     }
      .newsletter-input-field{
          width: 100%;
          margin-bottom: 15px;
-         font-size: 18px;
+         font-size: 15px;
          height: 50px;
     }
      .newsletter-input-field::placeholder{
-         font-size: 18px;
+         font-size: 15px;
     }
      .newsletter-content{
          flex-wrap: wrap;
@@ -988,7 +995,7 @@
          width: 100%;
          margin-left: 0;
     }
-     .nav-toggle span{
+     .menu-button{
          display: block;
     }
      .hidden-xs{
