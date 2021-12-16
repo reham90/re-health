@@ -1003,5 +1003,8 @@
      .copywrite{
          font-size: 12px;
     }
+    .menu-screen .social-icon:hover{
+        color: var(--theme-color);
+    }
 }
  
