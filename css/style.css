@@ -41,6 +41,7 @@
 }
  .address{
      display: flex;
+     align-items: center;
 }
  .address-info{
      font-size: 10px;
@@ -245,6 +246,10 @@
  .booking-btn:hover{
      background: var(--theme-color);
 }
+.intro-bar-icon{
+    color: #fff;
+    font-size: 13px;
+}
  .menu-screen{
      position: fixed;
      width: 100%;
@@ -260,6 +265,7 @@
      overflow: hidden;
      transition: .3s linear .3s;
 }
+
  .menu-screen.active{
      transition-delay: 0s;
      height: 100vh;
